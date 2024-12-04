@@ -91,3 +91,43 @@ info = ["specjalna opcja","inna opcja"]
 print(info)
 print(info[0])
 print(info[0][2])
+
+#słownik
+osoba = {
+    "imię":"Jan",
+    "nazwisko":"Nowak",
+    "miasto":"Kraków",
+    "wiek":43
+}
+print(osoba)
+
+print(osoba["imię"])
+osoba["dni"]  =  11
+print(osoba)
+
+osoba["wiek"] = 50
+
+print(osoba)
+
+print(osoba.keys())
+print(osoba.values())
+
+osoba["Wiek"] = 80
+
+print(osoba)
+
+spis = {
+    
+    "osoba1":{
+    "imię":"Jan",
+    "nazwisko":"Nowak",
+    "miasto":"Kraków",
+    "wiek":43
+    },
+    "osoba2": {
+        "imię": "Anna",
+        "nazwisko": "Nowak",
+        "miasto": "Kraków",
+        "wiek": 43
+    }
+}
