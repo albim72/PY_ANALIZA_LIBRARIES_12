@@ -50,3 +50,32 @@ cyfry[1:4] = [5,2,5,2,5,7,8,3,2]
 print(cyfry)
 
 # imiona[1:4] = ["Lara","Leon",]
+
+imiona = list(imiona)
+imiona.extend(["Ilona","Olaf","Nadia"])
+print(imiona)
+
+imiona = tuple(imiona)
+print(imiona)
+#zbiór
+
+kolory ={"niebieski","czerwony","zielony","fioletowy","biały","zielony"}
+print(kolory)
+
+kolory.add("magenta")
+print(kolory)
+
+kolory.update(["złoty","zółty","szmaragdowy"])
+print(kolory)
+
+kolory.add("czerwony")
+print(kolory)
+
+kolory.remove("złoty")
+print(kolory)
+
+kolory.discard("łososiowy")
+print(kolory)
+
+kolory.discard("biały")
+print(kolory)
