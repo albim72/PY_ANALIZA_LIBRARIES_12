@@ -79,3 +79,15 @@ print(kolory)
 
 kolory.discard("biały")
 print(kolory)
+
+s = "pralnia chemiczna"
+
+print(s)
+print(s[0])
+print(s[1])
+print(s[2:5])
+
+info = ["specjalna opcja","inna opcja"]
+print(info)
+print(info[0])
+print(info[0][2])
