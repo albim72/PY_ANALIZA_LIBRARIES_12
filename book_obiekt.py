@@ -21,9 +21,31 @@ class Book:
     def create_book(self):
         print("Uworzono obiekt klasy Book! (nową książkę!)")
 
+    def get_cena(self):
+        return self.cena
+
+    def set_cena(self,nowacena):
+        self.cena = nowacena
+
+    @property
+    def oprawa(self):
+        return self._oprawa
+
+    @oprawa.setter
+    def oprawa(self,nowaoprawa):
+        self._oprawa = nowaoprawa
+
+
+
 
 #tworzenie obiektu
 bk1 = Book(26,"Poradnik początkującego kulturysty","Michał Stec",42)
 print(bk1)
 bk1("tylko miękka oprawa!")
+print(f"oprawa na początku -> {bk1.oprawa}")
+bk1.set_cena(61)
+bk1.oprawa = "twarda"
+print(bk1)
+print(f"cena książki -> {bk1.get_cena()} zł")
+print(f"oprawa po zmianie: {bk1.oprawa}")
 
